@@ -25,7 +25,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class SoundMufflerMachine extends SlimefunItem implements EnergyNetComponent {
 
-    private static final String ITEM_NAME = "&3Sound Muffler";
+    private static final String ITEM_NAME = "&3消音器";
     private static final String ITEM_ID = "SOUND_MUFFLER";
 
     public static final int DISTANCE = 8;
@@ -34,7 +34,7 @@ public class SoundMufflerMachine extends SlimefunItem implements EnergyNetCompon
     public SoundMufflerMachine() {
         super(SoundMuffler.SOUND_MUFFLER,
             new SlimefunItemStack(ITEM_ID, Material.WHITE_CONCRETE, ITEM_NAME,
-                "", "&7Muffles all sound in a", "&78 block radius", "", "&e\u26A1 Requires power to use"
+                "", "&7消音器会在半径8格内完全消除声音", "", "&e需要能量支持"
             ),
             ITEM_ID,
             RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -68,13 +68,13 @@ public class SoundMufflerMachine extends SlimefunItem implements EnergyNetCompon
                 }
 
                 menu.replaceExistingItem(8, new CustomItemStack((enabled ? Material.REDSTONE : Material.GUNPOWDER),
-                    "&7Enabled: " + (enabled ? "&a\u2714" : "&4\u2718"), "", "&e> Click to enable this Machine"));
+                    "&7开启: " + (enabled ? "&a\u2714" : "&4\u2718"), "", "&e> 点击启用这台机器"));
                 menu.replaceExistingItem(0, new CustomItemStack(Material.PAPER,
-                    "&eVolume: &b" + volume,
-                    "&7Valid value range: 0-100",
-                    "&7L-click: -10",
-                    "&7R-click: +10",
-                    "&7With shift held: +/-1"));
+                    "&e范围: &b" + volume,
+                    "&7有效范围: 0-100",
+                    "&7左键: -10",
+                    "&7右键: +10",
+                    "&7按住蹲下: +/-1"));
 
                 final int finalVolume = volume;
                 menu.addMenuClickHandler(0, (p, arg1, arg2, arg3) -> {
