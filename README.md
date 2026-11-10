@@ -5,15 +5,9 @@ You need to install Slimefun4 and [ProtocolLib](https://www.spigotmc.org/resourc
 SoundMuffler is a Slimefun4 Addon that is created to stop the horrible noices from mob farms, piston machines and many other things that make sound.
 By using a SoundMuffler you are able to reduce the sound or even stop the sounds in an area.<br>
 
-
 ## Download SoundMuffler
-You can download SoundMuffler right here: [Development Builds](https://thebusybiscuit.github.io/builds/J3fftw1/SoundMuffler/master/)
 
-<p align="center">
-  <a href="https://thebusybiscuit.github.io/builds/J3fftw1/SoundMuffler/master/">
-    <img src="https://thebusybiscuit.github.io/builds/J3fftw1/SoundMuffler/master/badge.svg" alt="Build Server"/>
-  </a>
-</p>
+[下载 SoundMuffler](https://resources.guizhanss.com/plugin/SoundMuffler)
 
 ## Discord
 You can find Slimefun's community on Discord!
